@@ -23,7 +23,7 @@ class Class {
 
   @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
-  user: User;
+  user_id: User;
 
   @CreateDateColumn()
   created_at: Date;

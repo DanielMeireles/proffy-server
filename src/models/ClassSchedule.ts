@@ -27,7 +27,7 @@ class ClassSchedule {
 
   @ManyToOne(() => Class)
   @JoinColumn({ name: 'class_id' })
-  class: CreateClasses1596584704067;
+  class_id: Class;
 
   @CreateDateColumn()
   created_at: Date;
