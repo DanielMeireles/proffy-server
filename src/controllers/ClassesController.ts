@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { QueryRunner, getConnection } from 'typeorm';
+import { getConnection } from 'typeorm';
 
 import converHourToMinutes from '../utils/convertHourToMinutes';
 
