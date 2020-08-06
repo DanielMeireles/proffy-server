@@ -40,6 +40,7 @@ export default class ClassesController {
 
     const classes = await getConnection()
       .createQueryBuilder()
+      .addSelect('c.id', 'id')
       .addSelect('u.name', 'name')
       .addSelect('u.avatar', 'avatar')
       .addSelect('u.whatsapp', 'whatsapp')
